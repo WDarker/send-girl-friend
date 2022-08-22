@@ -34,6 +34,10 @@ def get_birthday():
     next = next.replace(year=next.year + 1)
   return (next - today).days
 
+def get_words_1():
+  word_1 = "今日的小晴晴又是格外的美丽"
+  return word_1
+
 def get_words():
   words = requests.get("https://api.shadiao.pro/chp")
   if words.status_code != 200:
